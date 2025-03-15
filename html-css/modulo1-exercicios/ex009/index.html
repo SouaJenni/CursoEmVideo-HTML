@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/SouaJenni" target="_blank" rel="external">repositório público no GitHub</a>.</p>
+    <p>Você também pode acessar meu <a href="https://www.twitch.tv/souajenni">canal na Twitch</a>.</p>
+    <!--Os parâmetros target e rel são utilizados para que o link externo que foi adicionado ao seu site abra o destino dele em outra janela ao invés de sobrepor o site atual, como acontece quando não se usa esses parâmetros-->
+
+    <h1>Usando links internos</h1>
+    <p>Essa é a primeira página so meu site mas você também pode acessar a <a href="pag002.html" rel="next">segunda página.</a></p>
+    <!--Neste caso, não queremos que abra em uma janela externa pois ainda é sobre o mesmo site, então tudo bem sobrepor-->
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next">página de notícias!</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="apllication/pdf">Baixar PDF da aula 10.</a></li>
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.pdf" type="apllication/zip">Baixar livro compactado em ZIP.</a></li>
+        <!--Neste exemplo o "livro" .pdf não está fazendo o download direto pois o navegador não reconheceu a funcionalidade, mas o .zip está-->
+    </ul>
+
+</body>
+</html>
